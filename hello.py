@@ -16,6 +16,19 @@ num2 = 20
 resultado = (num1 + num2) * 10
 print("El resultado es: ",resultado)
 
+# Data output
+nombre = "ignacio"
+edad = 13
+ciudad = "puerto"
+print("Hola yo soy",nombre,"y tengo",edad,"años")
+print("hola yo soy {} y tengo {} y vivo en {} rico".format(nombre,edad,ciudad))
+print(f"hola yo soy {nombre} y tengo {edad} y vivo en {ciudad}")
+
+# Data entry 
+nombre1 = input("Diga su nombre:")
+print(f"su nombre es: {nombre1}")
+number = int(input("Ahora puede decir un numero:"))
+print(f"El numero es: {number**2}")
 
 
 
@@ -23,11 +36,31 @@ print("El resultado es: ",resultado)
 
 
 
-''' operadores racionales
+
+
+
+
+
+
+'''  operadores racionales
 < mayor que
 > menor que 
 >= mayor o igual que
 <= menor o igual que
 == igual que
 != diferente que
+
+Operadores Logicos --> se obtiene como resultados booleanos 
+and = y 
+or = 0 
+not = no 
+
+Operadores de asignacion ----> funciona para acortar el codigo.
+a += 10     a = a + 10
+a -= 10     a = a - 10
+a *= 10     a = a * 10
+a /= 10     a = a / 10
+a **= 10
+a %= 10     
+
 '''
