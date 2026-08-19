@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartWatch</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div>
+            <h1>SmartWatch</h1>  
+            <img src="./img/smartwatch1.jpg" width="80px" height="80px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#catalogo">Catalogo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <section id="inicio" class="hero">
+            <h1>SmartWatch Pro</h1>
+            <img src="./img/smartwatch.jpg" width="200px" height="200px">
+            <p>El reloj inteligente para monitoriar tu salud y actividad física.</p>
+            <button>Registrar</button>
+        </section>
+    <!-- Sección de Características -->
+        <section id="productos" class="productos">
+            <img src="./img/smartwatch2.jpg" width="100px" height="100px">
+            <h2>Caracteristicas Principales</h2>
+            <ul>
+                <li>Monitor de ritmo cardiaco</li>
+                <li>Resistente al agua</li>
+                <li>Notificaciones de llamadas y mensajes</li>
+                <li>GPS integrado</li>
+                <li>Pantalla AMOLED FullHD</li>
+            </ul>
+        </section>
+    <!-- Formulario de Registro -->
+        <section id="registro" class="registro"> 
+            <h2>Registrar cliente</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input 
+                    type="text"
+                    name="nombre"
+                    id="nombre"
+                    placeholder="Ingrese su nombre">
+                <label for="email">Email:</label>
+                <input 
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Ingrese su email">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input 
+                    type="date"
+                    name="fecha"
+                    id="fecha">
+                <label for="ciudad">Ciudad:</label>
+                <select name="ciudad" id="ciudad">
+                    <option value="">Seleccione una ciudad</option>
+                    <option value="S">Santiago</option>
+                    <option value="V">Valparaiso</option>
+                    <option value="C">Cartagena</option>
+                    <option value="I">Iquique</option>
+                </select>
+                <label for="color">Color:</label>
+                <select name="color" id="color">
+                    <option value="">Seleccione un color</option>
+                    <option value="N">Negro</option>
+                    <option value="B">Blanco</option>
+                    <option value="R">Rojo</option>
+                    <option value="A">Azul</option>
+                </select>
+                <label for="accesorios">Accesorios:</label>
+                <input 
+                    type="checkbox"
+                    name="correa"
+                    id="correa">Correo deportiva
+                <input 
+                    type="checkbox"
+                    name="cargador" 
+                    id="cargador">Cargador inalambrico
+                <input 
+                    type="checkbox"
+                    name="protector" 
+                    id="protector">Protector pantalla
+                <label for="comentarios">Comentarios:</label>
+                <textarea
+                    name="comentarios"
+                    id="comentarios"
+                    cols="30"
+                    rows="4"
+                    placeholder="Ingrese sus comentarios"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <!-- Sección de Catalogo -->
+        <section id="catalogo" class="catalogo">
+            <h2>Catalogo de productos</h2>
+            <table>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Imgen</th>
+                </tr>
+                <tr>
+                    <th>SmartWatch Original</th>
+                    <th>$79.99</th>
+                    <th>200</th>
+                    <th><img src="./img/smartwatch1.jpg" width="60px" height="60px"></th>
+                </tr>
+                <tr>
+                    <th>SmartWatch Pro</th>
+                    <th>$129.99</th>
+                    <th>120</th>
+                    <th><img src="./img/smartwatch3.jpg" width="60px" height="60px"></th>
+                </tr>
+                <tr>
+                    <th>SmartWatch Elite</th>
+                    <th>$199.99</th>
+                    <th>60</th>
+                    <th><img src="./img/smartwatch4.jpg" width="60px" height="60px"></th>
+                </tr>
+                <tr>
+                    <th>SmartWatch Legion</th>
+                    <th>$500.00</th>
+                    <th>10</th>
+                    <th><img src="./img/smartwatch5.jpg" width="60px" height="60px"></th>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados. SmartWatch</p>
+    </div>
+    </footer>
+</body>
+</html>
