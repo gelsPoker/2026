@@ -81,3 +81,28 @@ else:
 # Hacer un programa que simule un cajero con uun saldo inicial de $1000 y tendra
 # 1. Ingresar dinero a la cuenta. 2. Retirar dinero de la cuenta 
 # 3. Mostrar dinero disponible. 4. Salir
+saldo_inicial = 1000
+print(f"Bienvnidos a su cajero automatico, su saldo inicial es de: {saldo_inicial}")
+print("Ingrese 1 para ingresar dinero a la cuenta")
+print("Ingrese 2 para retirar dinero de la cuenta")
+print("Ingrese 3 para mostrar dinero disponible")
+print("Ingrese 4 para salir")
+print("")
+while(saldo_inicial>=0):
+    opcion = int(input("Ingrese la opcion que desea:"))
+    if(opcion==1):
+        ingreso = float(input("Ingrese la cantidad de dinero que desea ingresar:"))
+        saldo_inicial = saldo_inicial + ingreso
+        print(f"Su nuevo saldo es de: ${saldo_inicial}")
+    elif(opcion==2):
+        retiro = float(input("Ingrese la cantidad de dinero que desea retirar:"))
+        if(retiro>=saldo_inicial):
+            print("Usted no posee esa cantidad de dinero, intente de nuevo")
+        else:
+            saldo_inicial = saldo_inicial - retiro
+            print(f"Su nuevo saldo es de: ${saldo_inicial}")
+    elif(opcion==3):
+        print(f"El saldo que posee es de: ${saldo_inicial}")
+    elif(opcion==4):
+        print(f"Gracias por su paciencia")
+        exit();
