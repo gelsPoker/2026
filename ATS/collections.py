@@ -1,4 +1,5 @@
 # Listas
+'''
 lista = [1,2,3,4]
 
 print(len(lista))                # len --> saber la cantidad de elementos que tiene tu lista.
@@ -14,7 +15,20 @@ lista.pop(2)                     # .pop() --> eliminar un valor mediante su indi
 lista.remove(1)                  # .remove() --> eliminar un elemento en especifico.
 lista.clear()                    # .clear() ---> limpiar la lista.
 print(lista)
-
+'''
 
 # lista.sort() --> ordenar los elementos de la lista ascendentemente.
 # lista.sort(reverse=True) --> ordenar los elementos de la lista a la inversa.
+
+# Tuplas
+tupla = (1,3.4,"iha")
+print(tupla)         
+# lista = [2,4,5,"JSI"]            lista.tuple(lista) ---> transformar una lista a tupla.
+
+# Conjuntos 
+conjunto = set()                   # Se le pone el set() para que no sea un diccionario.
+conjunto = {3}                     # NO puede haber valores duplicados en un conjunto
+conjunto.add(2)                    # .add() --> para agregar en un conjunto.
+conjunto.discard(2)                # .discard() --> eliminar un elemento.
+print(conjunto)
+

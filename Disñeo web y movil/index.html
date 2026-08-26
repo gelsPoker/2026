@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartWatch</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <!-- Encabezado -->
     <header>
-        <div>
+        <div class="logo">
             <h1>SmartWatch</h1>  
             <img src="./img/smartwatch1.jpg" width="80px" height="80px">
         </div>
@@ -25,13 +26,13 @@
     <main>
         <section id="inicio" class="hero">
             <h1>SmartWatch Pro</h1>
-            <img src="./img/smartwatch.jpg" width="200px" height="200px">
+            <img src="./img/smartwatch2.jpg" width="200px" height="200px">
             <p>El reloj inteligente para monitoriar tu salud y actividad física.</p>
             <button>Registrar</button>
         </section>
     <!-- Sección de Características -->
         <section id="productos" class="productos">
-            <img src="./img/smartwatch2.jpg" width="100px" height="100px">
+            <img src="./img/smartwatch.jpg" width="100px" height="100px">
             <h2>Caracteristicas Principales</h2>
             <ul>
                 <li>Monitor de ritmo cardiaco</li>
@@ -79,18 +80,20 @@
                     <option value="A">Azul</option>
                 </select>
                 <label for="accesorios">Accesorios:</label>
-                <input 
-                    type="checkbox"
-                    name="correa"
-                    id="correa">Correo deportiva
-                <input 
-                    type="checkbox"
-                    name="cargador" 
-                    id="cargador">Cargador inalambrico
-                <input 
-                    type="checkbox"
-                    name="protector" 
-                    id="protector">Protector pantalla
+                <div class="checkbox-group">
+                    <input 
+                        type="checkbox"
+                        name="correa"
+                        id="correa">Correo deportiva
+                    <input 
+                        type="checkbox"
+                        name="cargador" 
+                        id="cargador">Cargador inalambrico
+                    <input 
+                        type="checkbox"
+                        name="protector" 
+                        id="protector">Protector pantalla
+                </div>
                 <label for="comentarios">Comentarios:</label>
                 <textarea
                     name="comentarios"
@@ -109,7 +112,7 @@
                     <th>Modelo</th>
                     <th>Precio</th>
                     <th>Stock</th>
-                    <th>Imgen</th>
+                    <th>Imagen</th>
                 </tr>
                 <tr>
                     <th>SmartWatch Original</th>
@@ -139,10 +142,10 @@
         </section>
     </main>
     <!-- Pie de página -->
-    <footer class="site-footer">
-    <div class="footer-content">
+    <footer>
         <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados. SmartWatch</p>
-    </div>
     </footer>
 </body>
 </html>
+
+<!-- 11/08/26-->
