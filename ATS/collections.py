@@ -15,7 +15,7 @@ lista.pop(2)                     # .pop() --> eliminar un valor mediante su indi
 lista.remove(1)                  # .remove() --> eliminar un elemento en especifico.
 lista.clear()                    # .clear() ---> limpiar la lista.
 print(lista)
-'''
+
 
 # lista.sort() --> ordenar los elementos de la lista ascendentemente.
 # lista.sort(reverse=True) --> ordenar los elementos de la lista a la inversa.
@@ -31,4 +31,28 @@ conjunto = {3}                     # NO puede haber valores duplicados en un con
 conjunto.add(2)                    # .add() --> para agregar en un conjunto.
 conjunto.discard(2)                # .discard() --> eliminar un elemento.
 print(conjunto)
+'''
+a = set()
+b = set()
 
+a = {1,2,3}
+b = {3,4,5}                 
+
+# .union() --> unir dos conjuntos. tambien puede ser con el simbolo |
+# intersepcion                                  --> &
+# diferencia de conjuntos                       --> -
+# diferncia simetrica                           --> ^
+# ver si un conjunto es subconjunto de otro     --> .issubset()
+# ver si un conjunto es superconjunto de otro   --> .issuperset()
+# ver si dos conjuntos son disjuntos            --> .isdisjoint()
+# hacer un conjunto inmutable                   --> frozenset({1,2,3})
+
+# Diccionarios    ---> {"clave": valor}
+diccionario = {"nombre": "Juan", "edad": 30}
+diccionario["apellido"] = "Perez"
+del(diccionario["edad"])       
+print(diccionario)          
+
+# acceder a un valor mediante su llave.         print(diccionario["nombre"])
+# agregar un elemento al diccionario.           diccionario["apellido"] = "Perez"
+# eliminar un elemento                          del(diccionario[""])
