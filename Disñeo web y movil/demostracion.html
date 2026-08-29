@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red de Apoyo Mayor</title>
+    <link rel="stylesheet" href="./CSS/style2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Red de Apoyo Mayor</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#solicitud">Solicitar Ayuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h2>Acompañando a nuestros adultos mayores</h2>
+            <p>Un espacio dedicado a brindar asistencia en tramites, medicamentos y acompañamiento para quienes viven solos.</p>
+        </section>
+
+        <section id="servicios" class="servicios">
+            <h2>¿En que podemos ayudar?</h2>
+            <div class="lista-servicios">
+                <ul>
+                    <li> Compras de supermercado y farmacia</li>
+                    <li> Asistencia en trámites municipales</li>
+                    <li> Acompañamiento y actividades recreativas</li>
+                    <li> Contacto con redes familiares y voluntarios</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="solicitud" class="registro">
+            <h2>Formulario de Solicitud</h2>
+            <p>Complete este formulario para usted o para un adulto mayor que necesite apoyo.</p>
+            
+            <form id="formularioAyuda">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan perez" >
+
+                <label for="rut">RUT:</label>
+                <input type="text" name="rut" id="rut" placeholder="Ej: 12.345.678-9">
+
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ej: +569...">
+
+                <label for="tipo_ayuda">Tipo de ayuda requerida:</label>
+                <select name="tipo_ayuda" id="tipo_ayuda">
+                    <option value="">Seleccione una opción...</option>
+                    <option value="Tramites">Trámites legales o municipales</option>
+                    <option value="Medicamentos">Compra/Retiro de medicamentos</option>
+                    <option value="Compras">Compras de insumos básicos</option>
+                    <option value="Acompañamiento">Acompañamiento / Recreación</option>
+                </select>
+
+                <label for="detalles">Detalles adicionales:</label>
+                <textarea name="detalles" id="detalles" rows="4" placeholder="Describa brevemente la situación..."></textarea>
+
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </section>
+        <section>
+            <div id="resultadoSolicitud"></div>  
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Red de Apoyo Municipal.</p>
+    </footer>
+
+    <script src="./JavaScript/javaScript.js"></script>
+</body>
+</html>
