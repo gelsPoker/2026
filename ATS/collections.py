@@ -31,7 +31,7 @@ conjunto = {3}                     # NO puede haber valores duplicados en un con
 conjunto.add(2)                    # .add() --> para agregar en un conjunto.
 conjunto.discard(2)                # .discard() --> eliminar un elemento.
 print(conjunto)
-'''
+
 a = set()
 b = set()
 
@@ -52,7 +52,28 @@ diccionario = {"nombre": "Juan", "edad": 30}
 diccionario["apellido"] = "Perez"
 del(diccionario["edad"])       
 print(diccionario)          
-
+'''
 # acceder a un valor mediante su llave.         print(diccionario["nombre"])
 # agregar un elemento al diccionario.           diccionario["apellido"] = "Perez"
 # eliminar un elemento                          del(diccionario[""])
+
+equipos = {10:"leonel mesii",7:"cristiano ronaldo",11:"neymar jr",1:"claudio bravo"}
+print(equipos)
+print(equipos.get(19,"No existe un jgador con ese nuumero"))
+print(equipos.keys())     # Mostrar solo las claves del diccionario.
+print(equipos.values())   # Mostrar solos los nombres del diccionario.
+
+# Pilas 
+pila = [1,2,3,4]
+pila.append(5)          # .append() --> agregar un elemento al final de la pila.
+pila.pop()             # .pop() --> eliminar el ultimo elemento de la pila.
+print(pila)
+# Escriba un programa donde tenga una lista y que, elimine los elementos repetidos y por ultimo mostrar la lista 
+lista = [1,2,3,4,5,6,7,8,9,1,2,3,4,"hola","hola","hola"]
+lista = list(set(lista))  # Transformar la lista a conjunto y luego a lista para eliminar los elementos repetidos.
+print(lista)
+# escriba un programa que tenga 2 listas(no debe haber repeticiones)
+# 1. Lista de elementos que aparecen en ambas listas.
+# 2. Lista de elementos que aparecen en la primera lista pero no en la segunda.
+# 3. Lista de elementos que aparecen en la segunda lista pero no en la primera. 
+    
