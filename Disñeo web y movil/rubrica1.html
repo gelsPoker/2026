@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style3.css">
+    <title>Rubrica 1 - Adulto Mayores </title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Red de Apoyo Mayor</h1>
+            <img src="./img/logo.jpg" width="80px" height="80px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#reportes">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h2>Acompañando a nuestros adultos mayores</h2>
+            <p>Un espacio dedicado a brindar asistencia en trámites, medicamentos y acompañamiento para quienes viven solos.</p>
+        </section>
+
+        <section id="servicios" class="servicios">
+            <h2>¿En qué podemos ayudar?</h2>
+            <div class="lista-servicios">
+                <ul>
+                    <li>Compras de supermercado y farmacia</li>
+                    <li>Asistencia en trámites municipales</li>
+                    <li>Acompañamiento y actividades recreativas</li>
+                    <li>Contacto con redes familiares y voluntarios</li>
+                </ul>
+            </div>
+        </section>
+        <section id="reportes" class="reportes">
+    <h2>Reportes de Gestión</h2>
+    <p>Acceda a los reportes de gestión para conocer el impacto de nuestros servicios en la comunidad.</p>
+    
+    <form id="formularioReportes">
+        <div class="item_filtros">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan Pérez">
+        </div>
+        
+        <div class="item_filtros">
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" id="fecha">
+        </div>
+        
+        <div class="item_filtros">
+            <label for="filtroZona">Filtrar por Zona:</label>
+            <!-- Faltaba el atributo name aquí -->
+            <select name="zona" id="filtroZona">
+                <option value="">Seleccione una zona</option>
+                <option value="Norte">Norte</option>
+                <option value="Sur">Sur</option>
+                <option value="Centro">Centro</option>
+            </select>
+        </div>
+        
+        <div class="item_filtros">
+            <label for="filtroCategoria">Filtrar por Categoría:</label>
+            <!-- Faltaba el atributo name aquí -->
+            <select name="categoria" id="filtroCategoria">
+                <option value="">Seleccione una categoría</option>
+                <option value="Compras">Compras</option>
+                <option value="Tramites">Trámites</option>
+                <option value="Acompañamiento">Acompañamiento</option>
+            </select>
+        </div>
+        
+        <div class="item_filtros">
+            <label for="filtroEstado">Filtrar por Estado:</label>
+            <select name="estado" id="filtroEstado">
+                <option value="">Seleccione un estado</option>
+                <option value="Pendiente">Pendiente</option>
+                <option value="Asignada">Asignada</option>
+                <option value="Completada">Completada</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="btn-enviar">Generar Reporte</button>
+    </form>
+</section>
+        <section>
+            <H2> Resultado de los Reportes</H2>
+            <div id="resultadoReportes"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Red de Apoyo Municipal.</p>
+    </footer>
+    <script src="./JavaScript/js.js"></script>
+</body>
+</html>

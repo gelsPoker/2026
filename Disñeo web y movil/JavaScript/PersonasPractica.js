@@ -24,7 +24,4 @@ formulario.addEventListener("submit", function(evento){
     Rut: ${rut}<br>
     Direccion: ${direccion}
     `
-
-
-
 })
